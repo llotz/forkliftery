@@ -21,7 +21,6 @@ end
 
 function love.draw()
 	game:draw()
-	lg.print("nice", 100, 100)
 end
 
 function love.keypressed(key, scancode, isrepeat)
