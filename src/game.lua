@@ -13,10 +13,12 @@ end
 
 function Game:update(dt)
 	if love.keyboard.isDown("w") then
-		self.forklifter.y = self.forklifter.y - self.forklifter.speed;
+		self.forklifter.y = self.forklifter.y + self.forklifter.speed * math.sin(self.forklifter.angle);
+		self.forklifter.x = self.forklifter.x + self.forklifter.speed * math.cos(self.forklifter.angle); 
 	end
 	if love.keyboard.isDown("s") then
-		self.forklifter.y = self.forklifter.y + self.forklifter.speed;
+		self.forklifter.y = self.forklifter.y - self.forklifter.speed * math.sin(self.forklifter.angle);
+		self.forklifter.x = self.forklifter.x - self.forklifter.speed * math.cos(self.forklifter.angle); 
 	end
 	if love.keyboard.isDown("d") then
 		self.forklifter.angle = self.forklifter.angle + self.forklifter.rotationfactor;
