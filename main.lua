@@ -10,9 +10,11 @@ function love.load()
 require "src/classic"
 Object = require "src/classic"
 
+require "src/forklifter"
 require "src/game"
 
-game = Game()
+forklifter = Forklifter()
+game = Game(forklifter)
 end
 
 function love.update(dt)
@@ -21,6 +23,7 @@ end
 
 function love.draw()
 	game:draw()
+
 end
 
 function love.keypressed(key, scancode, isrepeat)
