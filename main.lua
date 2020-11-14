@@ -15,6 +15,7 @@ require "src/game"
 
 forklifter = Forklifter()
 game = Game(forklifter)
+game.debug = true
 end
 
 function love.update(dt)
