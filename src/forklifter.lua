@@ -5,7 +5,7 @@ function Forklifter:new()
 	self.forklifter.img = love.graphics.newImage("img/forklifter.png")
 	self.forklifter.x = 200
 	self.forklifter.y = 200
-	self.forklifter.speed = 4
+	self.forklifter.speed = 3.4
 	self.forklifter.angle = 0
 	self.forklifter.rotationfactor = 0.04
 	
