@@ -17,6 +17,7 @@ require "src/launchscreen"
 forklifter = Forklifter()
 game = Game(forklifter)
 launcher = Launchscreen()
+game.debug = true
 end
 
 function love.update(dt)
