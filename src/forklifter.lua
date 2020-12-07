@@ -7,7 +7,6 @@ function Forklifter:new()
 	self.speed = 2
 	self.angle = 0
 	self.rotationfactor = 0.03
-	
 end
 
 function Forklifter:update(dt)
