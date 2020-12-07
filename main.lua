@@ -24,7 +24,6 @@ end
 
 function love.draw()
 	game:draw()
-
 end
 
 function love.keypressed(key, scancode, isrepeat)
